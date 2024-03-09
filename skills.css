@@ -356,12 +356,29 @@ main {
 
 
 @media screen and (max-width: 1000px) {
+    .brand {
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+    nav {
+        font-size: 0.8rem ;
+    }
     main, .bar-bottom {
         grid-template-columns: 1fr;
     }
     .container {
+        margin: 1rem;
         max-width: 700px;
 
+    }
+    .titleText{
+        margin-top: 2rem;
+    }
+    .prof {
+        margin-top: 5rem;
+    }
+    .description {
+        font-size: 0.7rem;
     }
     .options {
         justify-self: start;
@@ -374,4 +391,39 @@ main {
         margin: 1em 0;
     }
 
+    .sizes li {
+        width: 3.2em;
+        height: 3.2em;
+        color: #fff;
+        border: 1px #ffffff solid;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 3.2em;
+        font-size: 0.7em;
+    }
+    .price {
+        font-size: 0.7rem;
+    }
+
+    .pag {
+        background: #000000;
+        width: 0.7em;
+        height: 0.2em;
+        margin: 0 7px;
+        transition: 0.3s;
+    }
+    .pag-active {
+        background: #006eff;
+    }
+    .bar-bottom {
+        color: white;
+        background: #181818;
+        padding: 1rem;
+    }
+    .arrows {
+        width:80%;
+        justify-content: space-between;
+    }
+
 }
+

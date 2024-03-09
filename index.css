@@ -28,8 +28,7 @@ body {
 
 .main_title {
     display: block;
-    width: 100%;
-    position: fixed;
+    width: 80%;
     color: #ffffff;
     margin: 50px;
 }
@@ -67,7 +66,6 @@ line-height: 25px;
 /*** ESTILOS BOTÓN GROW SKEW REVERSE ***/
 .ov-btn-grow-skew-reverse {
     border: auto;
-    position: fixed;
     margin: 30px;
     width: 80%;
     margin-top: 80px;
@@ -106,12 +104,12 @@ left: -20%;
 right: -20%;
 top: 0;
 bottom: 0;
-transform: skewX(30deg) scale(0, 1);
+transform: skewX(0deg) scale(0, 1);
 transition: all 0.3s ease;
 }
 .ov-btn-grow-skew-reverse:hover::after {
 transition: all 0.3s ease-out;
-transform: skewX(30deg) scale(1, 1);
+transform: skewX(0deg) scale(1, 1);
 }
 
 
@@ -162,3 +160,35 @@ transform: skewX(30deg) scale(1, 1);
     transition: 0.3s;
 }
 
+
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 1000px) {
+    .options {
+        width: 100%;
+        justify-content:center;
+        grid-template-columns: 100%;
+    }
+
+    .ov-btn-grow-skew-reverse {
+        background:#1e1e1e;
+        margin: 12%;
+        height: 450px;
+    }
+    .data {
+        padding: 0.8rem;
+        font-size: 0.6rem;
+    }
+    .data span {
+        font-size: 0.6rem;
+    }
+    .datas {
+        height: 270px;
+    }
+    .data:hover {
+        padding-bottom: 20px;
+        }
+    .container {
+        margin: 0rem;
+    }
+}

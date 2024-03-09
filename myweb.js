@@ -21,7 +21,7 @@ let shoe = 1;
 
 
 
-const prices = [["Python basics - MoureDev by Brains Moure"," Curso de Python para POO - Lucas Dalto"],["Python for data science - FreeBootCamp.org"," Curso completo de MySQL - HolaMundo.io"],"Curso de python para Backend - MoureDev by Brains Moure","Curso completo HTML & CSS - Lucas Dalto","Curso de Git - HolaMundo.io","","English cambridge B2 exam",""];
+const prices = [["Python basics - MoureDev by Brains Moure"," Curso de Python para POO - Lucas Dalto"],["Python for data science - FreeBootCamp.org"," Curso completo de MySQL - HolaMundo.io"],"Curso de python para Backend - MoureDev by Brains Moure","Curso completo HTML & CSS - Lucas Dalto","Curso de Git - HolaMundo.io","-","English cambridge B2 exam","-"];
 
 
 const names = [
@@ -38,7 +38,7 @@ const names = [
         "Front-end"
     ],
     [
-        "Trabajo Grupal"
+        "GIT"
     ],
     [
         "Office 365"
@@ -53,10 +53,10 @@ const names = [
 
 const descriptions = [
     [
-        "Python es un lenguaje de programación ampliamente utilizado en aplicaciones web, desarrollo de software, ciencia de datos y aprendizaje automático (ML). Los desarrolladores utilizan Python porque es eficiente y fácil de aprender, y puede ejecutarse en muchas plataformas diferentes."
+        "Python es un lenguaje de programación ampliamente utilizado en aplicaciones web, desarrollo de software, ciencia de datos y aprendizaje automático (ML). Los desarrolladores utilizan Python porque es eficiente y fácil de aprender, y puede ejecutarse en muchas plataformas diferentes"
     ],
     [
-        "NumPy, Pandas, matplotlib, sqlite3, numba."
+        "NumPy, Pandas, matplotlib, sqlite3, numba"
     ],
     [
         "FastAPI, SQLalchemy",
@@ -65,20 +65,20 @@ const descriptions = [
         "HTML, CSS & ReactPy",
     ],
     [
-        "Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia, confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas cuentan con una gran cantidad de archivos de código fuente.",
+        "Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia, confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas cuentan con una gran cantidad de archivos de código fuente",
     ],
     [
         "Las herramientas como word, excel y powerpoint me permiten compartir información de manera más dinámica y prolija ",
     ],
     [
-        "Soy hablante nativo del español, pero también soy fluido en el idioma inglés",
+        "Mi lengua nativa es el Español, pero también  puedo hablar y entender el Inglés",
     ],
     [
         "El uso de Notion me permite organizar mis tareas para ser más productivo",
     ],
 ];
 
-const ratings = [3,3,3,2,2,3,2,3,3];
+const ratings = [4,4,2,3,2,3,3,3];
 
 function getImage(shoe){
     skills = ["python","numpy","fastapi","frontend","git","office365","english","organization"]
@@ -101,7 +101,7 @@ function animate(element,time,anim) {
 }
 
 function resetStars(shoe) {
-    for (let i = 0; i < ratings[shoe]; i++) {
+    for (let i = ratings[shoe]; i < 5; i++) {
         stars[i].innerText = "";
     }
 

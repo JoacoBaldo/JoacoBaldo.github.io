@@ -42,7 +42,7 @@ const descriptions = [
     ],
 ];
 
-const ratings = [4,5];
+const ratings = [3,5];
 
 function getImage(shoe){
     skills = ["El_desconfiado.mp4","finance_[Ai].mp4"]
@@ -65,7 +65,7 @@ function animate(element,time,anim) {
 }
 
 function resetStars(shoe) {
-    for (let i = 0; i < ratings[shoe]; i++) {
+    for (let i = ratings[shoe]; i < 5; i++) {
         stars[i].innerText = "";
     }
 

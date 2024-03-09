@@ -1,0 +1,164 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans serif";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    background: linear-gradient(to left, #000000 70%, #030008);
+    display: block;
+}
+
+.container {
+    margin: 2rem;
+    height: 700px;
+    width: 97%;
+}
+
+
+.presentation img{
+    position: fixed;
+    width: 100%;
+    height: 900px;
+}
+
+.main_title {
+    display: block;
+    width: 100%;
+    position: fixed;
+    color: #ffffff;
+    margin: 50px;
+}
+
+.main_title p {
+    padding-left: 0.2rem;
+    color: #7aa5dd;
+}
+
+a { color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+line-height: 25px;
+}
+
+
+.options {
+    margin-top: 200px;
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-content:center;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+
+
+.option a {
+    font-size: 1.5rem;
+    color: aliceblues;
+}
+
+/*** ESTILOS BOTÓN GROW SKEW REVERSE ***/
+.ov-btn-grow-skew-reverse {
+    border: auto;
+    position: fixed;
+    margin: 30px;
+    width: 80%;
+    margin-top: 80px;
+    height: 500px;
+    border-radius: 15px;
+    padding-top: 2rem;
+    justify-content: center;
+    background:#0b0b0b87;
+    box-shadow: 10px 0 20px rgb(0, 0, 0);
+    color: #ffffff; /* color de fuente */
+    padding: 16px 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.ov-btn-grow-skew-reverse:hover {
+color: #000000;/* color de fuente hover */
+margin-top: 20px;
+}
+
+.data:hover {
+    padding-bottom: 40px;
+    border: 1px solid #000000;
+    }
+
+.ov-btn-grow-skew-reverse::after {
+content: "";
+background: linear-gradient(to top,  #7aa5dd 70%,  #6286b8);
+position: absolute;
+z-index: -1;
+padding: 16px 20px;
+display: block;
+left: -20%;
+right: -20%;
+top: 0;
+bottom: 0;
+transform: skewX(30deg) scale(0, 1);
+transition: all 0.3s ease;
+}
+.ov-btn-grow-skew-reverse:hover::after {
+transition: all 0.3s ease-out;
+transform: skewX(30deg) scale(1, 1);
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.data {
+    width: 90%;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    box-shadow: 10px 0 20px rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.data span {
+    font-size: 0.9rem;
+}
+
+.datas {
+    height: 310px;
+}
+
+.more {
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    background: #000000;
+    border-radius: 10px;
+    box-shadow: 10px 0 20px rgb(8, 8, 8);
+}
+
+.more a {
+    color: #ffffff;
+}
+
+
+.more:hover {
+    background: rgb(32, 32, 32);
+    font-palette: black;
+    transition: 0.3s;
+}
+
